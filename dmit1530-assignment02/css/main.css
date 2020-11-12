@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'milkshake';
+    src: url('../fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arial_black';
+    src: url('../fonts/arial-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'B612', sans-serif;
+    color: #dbecec;
+}
+
+.container {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1c1d1b;   
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: #dbecec;
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-family: 'milkshake';
+    margin: 0;   
+}
+
+h1 a {
+    text-transform: none;
+    font-size: 2rem;
+}
+
+h1 + a svg{
+    fill: #dbecec;
+}
+
+svg {
+    height: 2rem;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    background-color: #1c1d1b; 
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+}
+
+nav hr {
+    border: 0.5px solid #706b5e;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 1rem 0;
+}
+
+li svg {
+    margin-right: 0.5rem;
+}
+
+ol {
+    display: flex;
+}
+
+ol a{
+    border: 1px solid #dbecec;
+    padding: 0.75rem 1rem;
+}
+
+ol li {
+    margin: 2rem 2rem 3rem 0;
+}
+
+section:first-of-type {
+    background-image: url('../img/type-machine.webp');
+    background-size: cover;
+    background-position: center top;
+    height: 91vh;
+    position: relative;
+}
+
+section:first-of-type div {
+    background-color: #dbecec;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    padding: 4rem 1.5rem;
+}
+
+h2 {
+    font-size: 2.75rem;
+    line-height: 1.7;
+    text-transform: capitalize;
+    color: black;
+}
+
+main hr {
+    border: 2px solid #c6552c;
+    width: 1.5rem;
+    margin: auto;
+}
+
+hr + p {
+    line-height: 1.75;
+    color: black;
+}
+
+section:nth-of-type(2) {
+    background-color: #1c1d1b;
+}
+
+section:nth-of-type(2) div,
+section:last-of-type div  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem;   
+}
+
+h3 + p {
+    color: #c6552c;
+    font-family: 'arial_black';
+    text-transform: uppercase;
+    order: -2;
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+}
+
+section:nth-of-type(2) p:last-of-type {
+    margin: 3rem 0;
+    line-height: 1.75;
+}
+
+section:nth-of-type(2) a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #dbecec;
+    border-top: 1px solid #dbecec;
+    border-bottom: 1px solid #dbecec;
+    width: 10rem;
+    padding: 1rem 1.5rem;
+}
+
+section:last-of-type {
+    background-color: #dbecec;
+    background-image: url('../img/reading-lady.webp');
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+}
+
+section div div:first-of-type {
+    background-color: #1c1d1b;
+    padding: 1rem;
+    margin-bottom: 17rem;
+}
+
+section div ul {
+    color: black;
+    line-height: 2;
+    padding-left: 1.5rem;
+}
+
+section div div a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid #c6552c;
+    border-bottom: 1px solid #c6552c;
+    width: 12rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+section div div:last-of-type {
+    padding-bottom: 0;
+}
+
+footer {
+    background-color: #1c1d1b;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
+}
+
+footer p {
+    line-height: 1.75;
+    font-style: italic;
+}
+
+footer p:first-of-type {
+    font-family: 'arial_black';
+    text-transform: uppercase;
+    font-style: normal;
+    color: black;
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+
+span {
+    display: block;
+}
+
+@media (min-width: 850px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        display: flex;
+        align-items: baseline;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        text-align: center;
+        margin-right: 5rem;
+    }
+
+    nav ul li {
+        padding: 0 1rem;
+    }
+
+    nav ol li {
+        margin: 0 0 0 1rem;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    nav ul a:hover,
+    nav ul a:active {
+        font-style: italic;
+    }
+
+    nav ol a:hover,
+    nav ol a:active {
+        background-color: #dbecec;
+        color: black;
+    }
+
+    section:first-of-type {
+        margin: 0;
+    }
+
+    section:first-of-type div {
+        width: 40%;
+        left: 10%;
+        margin: 0;
+        bottom: -15%;
+    }
+
+    section:nth-of-type(2) div {
+        margin: 0;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    section:nth-of-type(2) a:hover,
+    section:nth-of-type(2) a:active {
+        background-color: #dbecec;
+        color: black;
+    }
+
+    section:last-of-type {
+        background-position: 0 50%;
+    }
+
+    section:last-of-type div div:first-of-type{
+        margin-bottom: 0;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    section:last-of-type div div:last-of-type {
+        margin-left: 55%;
+        padding-top: 0;
+    }
+
+    section:last-of-type a:hover,
+    section:last-of-type a:active {
+        background-color: #c6552c;
+        color: white;
+    }
+
+    footer p:first-of-type {
+        font-size: 10rem;
+    }
+}
